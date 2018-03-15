@@ -1,10 +1,9 @@
 # frozen_string_literal: true
 
-ignore 'wp/*'
+# Try to ignore source/wp directory (didn't work well)
+# ignore 'wp/*'
 
-configure :build do
-  before_build do
-  end
-  after_build do
-  end
-end
+# Try to override default_mapping (didn't work well)
+# mapping = Tilt::Mapping.new
+# mapping.register(Tilt::ERBTemplate, 'erb')
+# Tilt.define_singleton_method(:default_mapping) { mapping }
